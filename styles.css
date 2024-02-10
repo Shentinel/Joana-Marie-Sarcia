@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/background-joana.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: #fff; /* Added text color */
+}
+
+nav {
+    display: flex;
+    padding: 20px 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px; /* Adjusted logo height */
+    width: auto;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links ul li {
+    margin-left: 20px; /* Adjusted spacing between nav items */
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s; /* Added transition */
+}
+
+.nav-links ul li a:hover {
+    color: #f44336; /* Changed color on hover */
+}
+
+.text-box {
+    width: calc(100% - 500px - 10%); /* Adjusted width to accommodate the image */
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 16%; /* Adjusted left position */
+    transform: translateY(-50%);
+}
+
+.text-box h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.text-box p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.image {
+    position: absolute;
+    top: 50%;
+    right: 5%; /* Adjusted the right position */
+    transform: translateY(-50%);
+}
+
+
+.image img {
+    width: 500px; /* Adjusted image width */
+    height: auto;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 16px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 0.5s;
+}
+
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+        padding: 10px 0; /* Adjust padding */
+    }
+    .nav-links {
+        text-align: center; /* Align the links in the center */
+        padding-top: 20px; /* Add some space from the top */
+    }
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+    background-color: #f0f0f0;
+}
+
+.about-content {
+    max-width: 50%;
+    text-align: justify;
+}
+
+.additional-image img {
+    max-width: 80%; /* Adjusted to ensure the image doesn't exceed its container */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 20px; /* Added margin to create space between the image and the text */
+}
+
+.online-persona {
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-content h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Additional styles for the Online Persona section */
+/* Additional styles for the Online Persona section */
+.online-persona-section {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    padding: 50px;
+    background-color: #f0f0f0;
+}
+
+.online-persona-content {
+    max-width: 45%;
+    text-align: justify;
+}
+
+.online-persona-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center; /* Center-align heading */
+}
+
+.online-persona-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    text-align: justify;
+}
+
+.core-values-image {
+    max-width: 45%;
+    text-align: center; /* Center-align image */
+}
+
+.core-values-image img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Additional styles for the Core Values section */
+.core-values-section {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    padding: 50px;
+    background-color: #f0f0f0;
+}
+
+.core-values-content {
+    max-width: 45%;
+    text-align: justify;
+}
+
+.core-values-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center; /* Center-align heading */
+}
+
+.core-values-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #666;
+    text-align: justify;
+}
+
+footer {
+    background-color: #333; /* Background color for the footer */
+    color: #fff; /* Text color */
+    padding: 20px; /* Padding around the content */
+    text-align: center; /* Center-align the text */
+}
+
+.footer-content {
+    max-width: 600px; /* Limit the width of the content */
+    margin: 0 auto; /* Center the content horizontally */
+}
+
+.footer-content h3 {
+    margin-bottom: 10px; /* Add some space below the heading */
+}
+
+.footer-content ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+}
+
+.footer-content ul li {
+    margin-bottom: 5px; /* Add space between each list item */
+}
+
+.footer-social-media {
+    margin-top: 20px; /* Add some space between content and social media links */
+}
+
+.footer-social-media ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+}
+
+.footer-social-media ul li {
+    display: inline-block; /* Display social media icons horizontally */
+    margin-right: 10px; /* Add space between each social media icon */
+}
+
+.footer-social-media ul li:last-child {
+    margin-right: 0; /* Remove margin from the last social media icon */
+}
+
+.footer-social-media ul li a {
+    color: #fff; /* Text color for social media links */
+    text-decoration: none; /* Remove default underline */
+}
+
+.footer-social-media ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+
+.offer-section {
+    padding: 50px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.offer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.offer-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.offer-content ul {
+    padding: 0;
+    list-style: none;
+}
+
+.offer-content li {
+    margin-bottom: 10px;
+}
+
+.offer-content a {
+    display: block;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.offer-content a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
